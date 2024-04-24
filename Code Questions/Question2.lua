@@ -1,6 +1,6 @@
 function printSmallGuildNames(memberCount)
     -- this method is supposed to print names of all guilds that have less than memberCount max members
-    -- Creates a query string to specifically get names from the Guilds table where the max membersof the guild is less than parameter 
+    -- Creates a query string to specifically get names from the Guilds table where the max members of the guild is less than parameter 
     local selectGuildQuery = "SELECT name FROM guilds WHERE max_members < %d;"
     -- Making the call to the database, using the string.format to pass in the max members to compare with
     local resultId = db.storeQuery(string.format(selectGuildQuery, memberCount))
@@ -13,7 +13,7 @@ function printSmallGuildNames(memberCount)
             -- Print out the current result's string - this will be the Guild Name (slightly more efficient, though less verbose, to just print the result without storing it in a variable)
             print(result.getString("name"))
 
-            -- This is intended to run until there are no more results available to list out, and this is important so that there are not any blank results printed
-        until result.next(resultId)
+            -- This is intended to run until there are no more results available to list out, and this is important so that there are not any blank results printed and there is no error
+        until not result.next(resultId)
     end
 end
