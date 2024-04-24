@@ -1,0 +1,1 @@
+The files for this question (spells.xml and frigo.lua) are found under the forgottenserver-1.4\forgottenserver-1.4\data directory, with 'frigo.lua' being inside of the 'custom' folder which is already present there with other example custom spells.  
