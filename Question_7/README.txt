@@ -1,0 +1,1 @@
+The files for this question (jump.lua, jump.otmod, and jump.otui) are found under otclient-master\otclient-master\modules inside of a newly created folder called 'game_jump'. This module is then loaded up in the game via the module manager.

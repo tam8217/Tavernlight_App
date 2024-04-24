@@ -1,0 +1,9 @@
+Module
+  name: game_jump
+  description: A screen which will have the jump button inside of it
+  author: Tristan Marshall
+  website: test.com
+  sandboxed: true
+  scripts: [ jump ]
+  @onLoad: init() 
+  @onUnload: terminate()

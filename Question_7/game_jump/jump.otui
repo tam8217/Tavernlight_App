@@ -1,0 +1,10 @@
+MainWindow
+  id: jumpWindow
+  !text: tr('Jump Box!')
+  size: 400 400
+
+  Button
+    id: jumpButtonScreen
+    !text: tr('Jump!')
+    width: 64
+    @onClick: positionReset(self)
