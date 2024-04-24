@@ -207,6 +207,8 @@
 		<vocation name="Master Sorcerer" />
 	</instant>
 
+	<!-- This is the setup for the newly created Frigo spell. I made the parameters as basic as possible so that it could be cast multiple times in a row for testing. -->
+	<!-- In addition to this, I modified all druid spells in the file to be available for Sorcerer as well so that I could test them out and see how they worked. -->
 	<instant group="attack" spellid="998" name="Frigo" words="frigo" level="1" mana="1" premium="0" range="3" casterTargetOrDirection="1" blockwalls="1" cooldown="1" groupcooldown="1" needlearn="0" script="custom/frigo.lua">
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" />
